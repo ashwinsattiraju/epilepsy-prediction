@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editmodel:ClassDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" xmlns:options="options.xmi" name="Layer" size="1793,1079" id="org.artificial_neural_networks.common" metadata="uml2-1.0" initialized="true" zoom="0.6224588576960309" tag="1000" key="32303037303533312D31303030206C616D737461722D6E6574776F726B2F726963636172646F">
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.3/@sourceConnections.1" name="Neuron" location="1110,150" size="101,85" id="org.artificial_neural_networks.common/Neuron" runTimeClassModel="neuronID,clone()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="78,18">
+      <children xsi:type="editmodel:AttributeEditModel" name="neuronID" id="org.artificial_neural_networks.common/Neuron#neuronID"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="48,18">
+      <children xsi:type="editmodel:MethodEditModel" name="clone" id="org.artificial_neural_networks.common/Neuron#clone()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.3/@sourceConnections.0" name="NotEnoughNeuronsException" location="50,50" size="193,131" id="org.artificial_neural_networks.exceptions/NotEnoughNeuronsException">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="141,72">
+      <children xsi:type="editmodel:MethodEditModel" name="NotEnoughNeuronsException" id="org.artificial_neural_networks.exceptions/NotEnoughNeuronsException#NotEnoughNeuronsException(Ljava.lang.Throwable;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="NotEnoughNeuronsException" id="org.artificial_neural_networks.exceptions/NotEnoughNeuronsException#NotEnoughNeuronsException(Ljava.lang.String;Ljava.lang.Throwable;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="NotEnoughNeuronsException" id="org.artificial_neural_networks.exceptions/NotEnoughNeuronsException#NotEnoughNeuronsException(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="NotEnoughNeuronsException" id="org.artificial_neural_networks.exceptions/NotEnoughNeuronsException#NotEnoughNeuronsException()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="LamstarInputLayer" location="254,721" size="208,275" id="org.artificial_neural_networks.networks.lamstar/LamstarInputLayer">
+    <children xsi:type="editmodel:CompartmentEditModel" size="147,72">
+      <children xsi:type="editmodel:AttributeEditModel" name="expectedNeuralVectorLength" id="org.artificial_neural_networks.networks.lamstar/LamstarInputLayer#expectedNeuralVectorLength"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="layerID" id="org.artificial_neural_networks.networks.lamstar/LamstarInputLayer#layerID"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="layerName" id="org.artificial_neural_networks.networks.lamstar/LamstarInputLayer#layerName"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="tolerance" id="org.artificial_neural_networks.networks.lamstar/LamstarInputLayer#tolerance"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="135,144">
+      <children xsi:type="editmodel:MethodEditModel" name="LamstarInputLayer" id="org.artificial_neural_networks.networks.lamstar/LamstarInputLayer#LamstarInputLayer(Ljava.util.ArrayList;DJLjava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="LamstarInputLayer" id="org.artificial_neural_networks.networks.lamstar/LamstarInputLayer#LamstarInputLayer(DJLjava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="addExample" id="org.artificial_neural_networks.networks.lamstar/LamstarInputLayer#addExample(Lorg.artificial_neural_networks.common.NeuralVector;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="applyInputGetBestNeuronID" id="org.artificial_neural_networks.networks.lamstar/LamstarInputLayer#applyInputGetBestNeuronID(Lorg.artificial_neural_networks.common.NeuralVector;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="applyInputGetBestNeuronID" id="org.artificial_neural_networks.networks.lamstar/LamstarInputLayer#applyInputGetBestNeuronID([D)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getAllNeuronsIDs" id="org.artificial_neural_networks.networks.lamstar/LamstarInputLayer#getAllNeuronsIDs()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getNeuronByID" id="org.artificial_neural_networks.networks.lamstar/LamstarInputLayer#getNeuronByID(Ljava.lang.Long;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getNumberOfNeurons" id="org.artificial_neural_networks.networks.lamstar/LamstarInputLayer#getNumberOfNeurons()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="org.artificial_neural_networks.common/Layer&lt;-org.artificial_neural_networks.networks.lamstar/LamstarInputLayer" source="//@children.2" target="//@children.4/@sourceConnections.1" targetEnd="//@children.2/@sourceConnections.0/@children.1" sourceEnd="//@children.2/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="104,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.4/@sourceConnections.0 //@children.4/@sourceConnections.1" name="Layer" location="554,285" size="155,121" id="org.artificial_neural_networks.common/Layer">
+    <children xsi:type="editmodel:CompartmentEditModel" size="132,18">
+      <children xsi:type="editmodel:AttributeEditModel" name="neurons" id="org.artificial_neural_networks.common/Layer#neurons"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="112,54">
+      <children xsi:type="editmodel:MethodEditModel" name="Layer" id="org.artificial_neural_networks.common/Layer#Layer()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="Layer" id="org.artificial_neural_networks.common/Layer#Layer(Ljava.util.ArrayList;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getNumberOfNeurons" id="org.artificial_neural_networks.common/Layer#getNumberOfNeurons()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="org.artificial_neural_networks.common/Layer-Standard::Send->org.artificial_neural_networks.exceptions/NotEnoughNeuronsException*org.artificial_neural_networks.common/Layer-Standard::Instantiate->org.artificial_neural_networks.exceptions/NotEnoughNeuronsException*org.artificial_neural_networks.common/Layer-Soyatec::Import->org.artificial_neural_networks.exceptions/NotEnoughNeuronsException" source="//@children.3" target="//@children.1" targetEnd="//@children.3/@sourceConnections.0/@children.2" label="//@children.3/@sourceConnections.0/@children.0" sourceEnd="//@children.3/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Send, Import, Instantiate»" size="105,10" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,23" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="193,111"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="org.artificial_neural_networks.common/Layer-Standard::Call->org.artificial_neural_networks.common/Neuron*org.artificial_neural_networks.common/Layer-Soyatec::Import->org.artificial_neural_networks.common/Neuron" source="//@children.3" target="//@children.0" targetEnd="//@children.3/@sourceConnections.1/@children.2" label="//@children.3/@sourceConnections.1/@children.0" sourceEnd="//@children.3/@sourceConnections.1/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Import, Call»" size="55,10" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="155,37" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,56"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="LamstarCorrelationLayer" location="570,793" size="208,39" id="org.artificial_neural_networks.networks.lamstar/LamstarCorrelationLayer" runTimeClassModel="">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="org.artificial_neural_networks.networks.lamstar/LamstarCorrelationLayer-Standard::Derive->org.artificial_neural_networks.common/Layer" source="//@children.4" target="//@children.3" targetEnd="//@children.4/@sourceConnections.0/@children.2" label="//@children.4/@sourceConnections.0/@children.0" sourceEnd="//@children.4/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Derive»" size="34,10" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="69,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="85,121"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" targetConnections="//@children.5/@sourceConnections.0 //@children.2/@sourceConnections.0" autoLocated="true" id="org.artificial_neural_networks.common/Layer&lt;-org.artificial_neural_networks.networks.lamstar/LamstarCorrelationLayer" source="//@children.4" target="//@children.3" targetEnd="//@children.4/@sourceConnections.1/@children.1" sourceEnd="//@children.4/@sourceConnections.1/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="93,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="67,121" anchorKind="FixedAtEdge"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="LamstarOutputLayer" location="1064,674" size="208,329" id="org.artificial_neural_networks.networks.lamstar/LamstarOutputLayer">
+    <children xsi:type="editmodel:CompartmentEditModel" size="78,36">
+      <children xsi:type="editmodel:AttributeEditModel" name="punish" id="org.artificial_neural_networks.networks.lamstar/LamstarOutputLayer#punish"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="reward" id="org.artificial_neural_networks.networks.lamstar/LamstarOutputLayer#reward"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="169,234">
+      <children xsi:type="editmodel:MethodEditModel" name="LamstarOutputLayer" id="org.artificial_neural_networks.networks.lamstar/LamstarOutputLayer#LamstarOutputLayer(Ljava.util.TreeSet;Ljava.util.HashMap;DD)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="LamstarOutputLayer" id="org.artificial_neural_networks.networks.lamstar/LamstarOutputLayer#LamstarOutputLayer(Ljava.util.TreeSet;Ljava.util.HashMap;Ljava.util.HashMap;DD)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getClassificationForInput" id="org.artificial_neural_networks.networks.lamstar/LamstarOutputLayer#getClassificationForInput(Ljava.util.HashMap;Ljava.util.HashMap;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getClassificationForInput" id="org.artificial_neural_networks.networks.lamstar/LamstarOutputLayer#getClassificationForInput(Ljava.util.HashMap;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getIndexOfMostImportantInputLayer" id="org.artificial_neural_networks.networks.lamstar/LamstarOutputLayer#getIndexOfMostImportantInputLayer()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getNeuronIDClassifying" id="org.artificial_neural_networks.networks.lamstar/LamstarOutputLayer#getNeuronIDClassifying(Lorg.artificial_neural_networks.common.Classification;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getNeuronsIDs" id="org.artificial_neural_networks.networks.lamstar/LamstarOutputLayer#getNeuronsIDs()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getNumberOfNeurons" id="org.artificial_neural_networks.networks.lamstar/LamstarOutputLayer#getNumberOfNeurons()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="printWeightsConfiguration" id="org.artificial_neural_networks.networks.lamstar/LamstarOutputLayer#printWeightsConfiguration()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="punishCorrelationNeuron" id="org.artificial_neural_networks.networks.lamstar/LamstarOutputLayer#punishCorrelationNeuron(Ljava.lang.Long;Ljava.lang.Long;Ljava.lang.Long;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="punishInputNeuron" id="org.artificial_neural_networks.networks.lamstar/LamstarOutputLayer#punishInputNeuron(Ljava.lang.Long;Ljava.lang.Long;Ljava.lang.Long;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="rewardCorrelationNeuron" id="org.artificial_neural_networks.networks.lamstar/LamstarOutputLayer#rewardCorrelationNeuron(Ljava.lang.Long;Ljava.lang.Long;Ljava.lang.Long;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="rewardInputNeuron" id="org.artificial_neural_networks.networks.lamstar/LamstarOutputLayer#rewardInputNeuron(Ljava.lang.Long;Ljava.lang.Long;Ljava.lang.Long;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="org.artificial_neural_networks.common/Layer&lt;-org.artificial_neural_networks.networks.lamstar/LamstarOutputLayer" source="//@children.5" target="//@children.4/@sourceConnections.1" targetEnd="//@children.5/@sourceConnections.0/@children.1" sourceEnd="//@children.5/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="104,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <diagramOptions xsi:type="options:ClassDiagramOptions" interactive="false" level="5" properties="open=org.artificial_neural_networks.common/Layer;wireOptions=7;Product=eUML2"/>
+  <boardSetting snapToGeometry="true" gridEnabled="true" gridSpacing="15,15" gridOrigin="0,0" rulerUnit="pixel" gridVisibility="false">
+    <leftRuler/>
+    <topRuler/>
+  </boardSetting>
+  <classDiagramPreferences xsi:type="editmodel:UMLClassDiagramPreference" showPopupBars="true" showConnectionHandles="true" attributeSorter="Natural" methodSorter="Natural" showClassStereotype="true" showPackageStereotype="true" showDependencyStereotype="true" showInterfaceStereotype="true" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+</editmodel:ClassDiagramEditModel>
