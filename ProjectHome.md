@@ -1,0 +1,1 @@
+This project is a mixture of Java code and MATLAB scripts aimed at extracting useful features from EEGs and predict in a variable time frame whether an attack is supposed to happen or not
